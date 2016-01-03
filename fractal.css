@@ -1,0 +1,80 @@
+body {
+    margin-top: 57px;
+}
+
+.menubar {
+    background: #2d3e50;
+    padding: 0.5em;
+    padding-left: 1em;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    text-transform: capitalize;
+}
+.pure-menu.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+}
+
+.menubar .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    text-transform: capitalize;
+}
+
+.menubar .pure-menu-selected a {
+    color: white;
+    font-weight: 450;
+}
+
+.menubar a {
+    color: #e4f4ff;
+}
+.menubar li a:hover{
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.menubar li a:focus {
+    background: none;
+    border: none;
+}
+
+.fractal-display {
+    height: 100%;
+}
+
+.fractal-options {
+    min-height: 100%;
+    background: #f7f7f7;
+}
+
+#fractal {
+    height: 90%;
+    width: 85%;
+    border: 2px solid #636363;
+}
+
+.container {
+    height: 100%
+}
+
+.fractal-display .content {
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.fractal-options .content{
+    padding: 1em;
+    padding-top: 1em;
+}
+
+.pure-button-secondary {
+    background: #00aa2f;
+    color: white;
+}
+
+.pure-button-reset {
+    background: #c93b3b;
+    color: white;
+}

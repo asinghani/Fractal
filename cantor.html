@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Fractal Generator</title>
+
+    <!-- Include Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.rawgit.com/konvajs/konva/0.10.0/konva.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vex-js/2.3.3/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/2.3.3/css/vex.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/2.3.3/css/vex-theme-os.css" />
+
+    <link rel="stylesheet" href="fractal.css">
+
+    <script src="cantor.js"></script>
+    <script src="misc.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menubar pure-menu pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading" href="index.html">Fractal Generator</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="index.html" class="pure-menu-link">Fractal List</a>
+                </li>
+                <li class="pure-menu-item pure-menu-selected">
+                    <a href="#" class="pure-menu-link">Cantor Set</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="cantor0.html" class="pure-menu-link">Cantor 0</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="javascript:info();" class="pure-menu-link">Info</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pure-g container">
+        <div class="pure-u-2-3 fractal-display">
+            <div class="content">
+                <div id="fractal"></div>
+            </div>
+        </div>
+        <div class="pure-u-1-3 fractal-options">
+            <div class="content">
+                <h4>Fractal Options:</h4>
+                <div>
+                    <span style="font-weight: bold;">Iterations:&nbsp;&nbsp;&nbsp;</span>
+                    <input type="range" id="iterationsSlider" style="width:50%" min="1" max="50" step="1" value="10">
+                    <input type="number" id="iterationsLabel" value="10" min=1 max=50>
+                </div>
+                <br>
+                <div>
+                    <span style="font-weight: bold;">Fraction:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <input type="range" id="fractionSlider" style="width:50%" min="3" max="25" step="1" value="3">
+                    <input type="number" id="fractionLabel" value="3" min="3" max="25">
+                </div>
+                <br>
+                <a href="#" id="generate" class="pure-button pure-button-primary">Generate Fractal</a>
+                <a href="#" id="step" class="pure-button pure-button-secondary">Single Step</a>
+                <a href="#" id="reset" class="pure-button pure-button-reset">Reset</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
