@@ -1,3 +1,9 @@
+/*
+    This program generates the Koch Curve fractal.
+
+    Copyright © 2016 Anish Singhani
+*/
+
 // When Page loaded, create drawing canvas
 // Then set variables w and h to equal width and height
 var canvas, w, h, layers;
